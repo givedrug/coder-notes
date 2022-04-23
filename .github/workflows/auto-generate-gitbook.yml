@@ -5,7 +5,7 @@ on:
     - master
 
 jobs:
-  main-to-gh-pages:
+  master-to-gh-pages:
     runs-on: ubuntu-latest
         
     steps:                          
@@ -27,7 +27,7 @@ jobs:
       run: |
         book sm
         gitbook build
-        cp SUMMARY.md _book
+        mv SUMMARY.md _book
                 
     - name: push _book to branch gh-pages 
       env:
