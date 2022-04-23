@@ -1,9 +1,9 @@
 # Summary
 
 - Aaa
-  - Java
-    * [111](aaa/1.1/1.1.1.md)
+  - java
+    * [switch语句](aaa/1.1/1.1.1.md)
   - Mybatis
-    * [222](aaa/mybatis/222.md)
+    * [RESTful API与mybatis注解方式完整示例](aaa/mybatis/222.md)
   - Spring
-    * [333](aaa/spring/333.md)
+    * [将spring默认json转换器替换为gson](aaa/spring/333.md)
