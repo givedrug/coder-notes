@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>将spring默认json转换器替换为gson · Summary</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"givedrug","repo":"coder-notes","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Aaa
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../1.1/1.1.1.html">
+            
+                <a href="../1.1/1.1.1.html">
+            
+                    
+                    switch语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    Mybatis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../mybatis/222.html">
+            
+                <a href="../mybatis/222.html">
+            
+                    
+                    RESTful API与mybatis注解方式完整示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    Spring
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.3.1" data-path="333.html">
+            
+                <a href="333.html">
+            
+                    
+                    将spring默认json转换器替换为gson
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Bbb
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    test
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../bbb/test/test.html">
+            
+                <a href="../../bbb/test/test.html">
+            
+                    
+                    test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../bbb/test/test1.html">
+            
+                <a href="../../bbb/test/test1.html">
+            
+                    
+                    test1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >将spring默认json转换器替换为gson</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x65B9;&#x5F0F;1"><b>1. </b>&#x65B9;&#x5F0F;1</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;"><b>2. </b>&#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#&#x65B9;&#x5F0F;3"><b>3. </b>&#x65B9;&#x5F0F;3</a></li></ul></div><a href="#&#x65B9;&#x5F0F;1" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x65B9;&#x5F0F;1"><a name="&#x65B9;&#x5F0F;1" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;1"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x65B9;&#x5F0F;1</h1>
+<p>&#x76F4;&#x63A5;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x65B0;&#x589E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-properties"><span class="token key attr-name">spring.http.converters.preferred-json-mapper</span><span class="token punctuation">=</span><span class="token value attr-value">gson</span>
+<span class="token key attr-name">spring.gson.date-format</span> <span class="token punctuation">=</span> <span class="token value attr-value">yyyy-MM-dd HH:mm:ss</span>
+</code></pre>
+<p>&#x6CE8;&#xFF1A;</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;json&#x8F6C;&#x6362;&#x5668;&#x662F;jackson&#xFF0C;&#x914D;&#x7F6E;&#x4E00;&#x822C;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-properties"><span class="token key attr-name">spring.jackson.date-format</span> <span class="token punctuation">=</span> <span class="token value attr-value">yyyy-MM-dd HH:mm:ss</span>
+<span class="token key attr-name">spring.jackson.time-zone</span> <span class="token punctuation">=</span> <span class="token value attr-value">GMT+8</span>
+</code></pre>
+<p>Spring Boot&#x4E3A;Gson&#x914D;&#x7F6E;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x662F;&#x5217;&#x8868;&#x53C2;&#x8003;&#xFF1A;</p>
+<pre class="language-"><code class="lang-properties"><span class="token comment"># &#x5E8F;&#x5217;&#x5316;&#x65E5;&#x671F;&#x5BF9;&#x8C61;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x683C;&#x5F0F;&#x3002;</span>
+<span class="token key attr-name">spring.gson.date-format</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x662F;&#x5426;&#x7981;&#x7528;HTML&#x5B57;&#x7B26;&#x8F6C;&#x4E49;&#xFF0C;&#x5982;&#x201C;&lt;&#x201D;&#x3001;&#x201C;&gt;&#x201D;&#x7B49;&#x3002;</span>
+<span class="token key attr-name">spring.gson.disable-html-escaping</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x662F;&#x5426;&#x5728;&#x5E8F;&#x5217;&#x5316;&#x671F;&#x95F4;&#x6392;&#x9664;&#x5185;&#x90E8;&#x7C7B;&#x3002;</span>
+<span class="token key attr-name">spring.gson.disable-inner-class-serialization</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x662F;&#x5426;&#x542F;&#x7528;&#x590D;&#x6742;&#x6620;&#x5C04;&#x952E;&#xFF08;&#x5373;&#x975E;&#x539F;&#x8BED;&#xFF09;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x3002;</span>
+<span class="token key attr-name">spring.gson.enable-complex-map-key-serialization</span><span class="token punctuation">=</span>
+
+<span class="token comment"># &#x662F;&#x5426;&#x6392;&#x9664;&#x6240;&#x6709;&#x6CA1;&#x6709;&#x201C;expose&#x201D;&#x6CE8;&#x91CA;&#x7684;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x5E8F;&#x5217;&#x5316;&#x6216;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x3002;</span>
+<span class="token key attr-name">spring.gson.exclude-fields-without-expose-annotation</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x5728;&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x671F;&#x95F4;&#x5E94;&#x7528;&#x4E8E;&#x5BF9;&#x8C61;&#x5B57;&#x6BB5;&#x7684;&#x547D;&#x540D;&#x7B56;&#x7565;&#x3002;</span>
+<span class="token key attr-name">spring.gson.field-naming-policy</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x662F;&#x5426;&#x901A;&#x8FC7;&#x5728;&#x8F93;&#x51FA;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x6587;&#x672C;&#x6765;&#x751F;&#x6210;&#x4E0D;&#x53EF;&#x6267;&#x884C;&#x7684;JSON&#x3002;</span>
+<span class="token key attr-name">spring.gson.generate-non-executable-json</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x5BF9;&#x4E8E;&#x89E3;&#x6790;&#x4E0D;&#x7B26;&#x5408;RFC 4627&#x7684;JSON&#x662F;&#x5426;&#x5BBD;&#x5BB9;&#x3002;</span>
+<span class="token key attr-name">spring.gson.lenient</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x957F;&#x7C7B;&#x578B;&#x548C;&#x957F;&#x7C7B;&#x578B;&#x7684;&#x5E8F;&#x5217;&#x5316;&#x7B56;&#x7565;&#x3002;</span>
+<span class="token key attr-name">spring.gson.long-serialization-policy</span><span class="token punctuation">=</span> 
+
+<span class="token comment"># &#x662F;&#x5426;&#x8F93;&#x51FA;&#x9002;&#x5408;&#x6F02;&#x4EAE;&#x6253;&#x5370;&#x9875;&#x9762;&#x7684;&#x5E8F;&#x5217;&#x5316;JSON&#x3002;</span>
+<span class="token key attr-name">spring.gson.pretty-printing</span><span class="token punctuation">=</span>
+
+<span class="token comment"># &#x662F;&#x5426;&#x5E8F;&#x5217;&#x5316;&#x7A7A;&#x5B57;&#x6BB5;&#x3002;</span>
+<span class="token key attr-name">spring.gson.serialize-nulls</span><span class="token punctuation">=</span>
+</code></pre>
+<h1 id="&#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;"><a name="&#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x65B9;&#x5F0F;2&#xFF08;&#x63A8;&#x8350;&#xFF09;</h1>
+<p>&#x901A;&#x8FC7;&#x5B9E;&#x73B0;WebMvcConfigurer&#x63A5;&#x53E3;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">import</span> <span class="token import"><span class="token namespace">com<span class="token punctuation">.</span>google<span class="token punctuation">.</span>gson<span class="token punctuation">.</span></span><span class="token class-name">Gson</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">com<span class="token punctuation">.</span>google<span class="token punctuation">.</span>gson<span class="token punctuation">.</span></span><span class="token class-name">GsonBuilder</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>context<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span></span><span class="token class-name">Configuration</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>http<span class="token punctuation">.</span>converter<span class="token punctuation">.</span></span><span class="token class-name">HttpMessageConverter</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>http<span class="token punctuation">.</span>converter<span class="token punctuation">.</span>json<span class="token punctuation">.</span></span><span class="token class-name">GsonHttpMessageConverter</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>web<span class="token punctuation">.</span>servlet<span class="token punctuation">.</span>config<span class="token punctuation">.</span>annotation<span class="token punctuation">.</span></span><span class="token class-name">WebMvcConfigurer</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">List</span></span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@Configuration</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SpringMvcConfigure</span> <span class="token keyword">implements</span> <span class="token class-name">WebMvcConfigurer</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">/**
+     * &#x914D;&#x7F6E;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x5668;
+     * @param converters
+     */</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">configureMessageConverters</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">HttpMessageConverter</span><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> converters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">GsonHttpMessageConverter</span> gsonHttpMessageConverter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GsonHttpMessageConverter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x521B;&#x5EFA;&#x4E0E;&#x914D;&#x7F6E; Gson &#x5BF9;&#x8C61;</span>
+        <span class="token class-name">Gson</span> gson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GsonBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">setDateFormat</span><span class="token punctuation">(</span><span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">excludeFieldsWithoutExposeAnnotation</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">disableHtmlEscaping</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gsonHttpMessageConverter<span class="token punctuation">.</span><span class="token function">setGson</span><span class="token punctuation">(</span>gson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x5C06;&#x5176;&#x653E;&#x5728;&#x9996;&#x4F4D;</span>
+        converters<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>gsonHttpMessageConverter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6CE8;&#xFF1A;</p>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;Gson&#x5C5E;&#x6027;</li>
+<li>&#x9664;&#x4E86;configureMessageConverters&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8986;&#x76D6;extendMessageConverters&#x65B9;&#x6CD5;</li>
+<li>&#x5982;&#x679C;&#x5DE5;&#x7A0B;&#x4E2D;extends WebMvcConfigurationSupport&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8986;&#x76D6;&#x6389;WebMvcConfigurer&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x65AD;&#x70B9;&#x8C03;&#x8BD5;&#x662F;&#x5426;&#x8FDB;&#x5165;</li>
+</ol>
+<blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x4E3A;&#x6DFB;&#x52A0;&#x8DE8;&#x57DF;&#x652F;&#x6301;&#x65F6;&#x7EE7;&#x627F;&#x4E86;WebMvcConfigurationSupport&#xFF0C;&#xFF08;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;webmvcconfigureAdapter &#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x662F;SpringBoot2.x &#x4EE5;&#x4E0A;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x8BE5;&#x62BD;&#x8C61;&#x7C7B;&#x5DF2;&#x7ECF;&#x88AB;&#x5E9F;&#x5F03;&#xFF09;&#x800C;&#x5728;WebMvc &#x81EA;&#x52A8;&#x88C5;&#x914D;&#x7684;&#x914D;&#x7F6E;&#x7C7B;&#x4E2D;&#xFF0C;&#x6307;&#x5B9A;&#x4E86;WebMvc&#x7684;&#x52A0;&#x8F7D;&#x6761;&#x4EF6;</p>
+<ul>
+<li>&#x5F53;&#x73AF;&#x5883;&#x4E2D;&#xFF08;IOC&#x5BB9;&#x5668;&#xFF09;&#x5B58;&#x5728;Servlet&#x3001; DispatcherServlet&#x3001; WebMvcConfigurer &#x65F6;&#x52A0;&#x8F7D;WebMvc&#x914D;&#x7F6E;</li>
+<li>&#x5F53;&#x73AF;&#x5883;&#x4E2D;&#x5B58;&#x5728;WebMvcConfigurationSupport Bean&#x65F6;&#x4E0D;&#x52A0;&#x8F7D;&#x6B64;&#x914D;&#x7F6E;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E0D;&#x80FD;&#x6709;WebMvcConfigurationSupport</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x8FD9;&#x4E5F;&#x5C31;&#x89E3;&#x91CA;&#x4E86;&#x6211;&#x4EEC;&#x65B0;&#x6DFB;&#x52A0;&#x7684;&#x62E6;&#x622A;&#x5668;&#x4E0D;&#x751F;&#x6548;&#x7684;&#x539F;&#x56E0;&#x4E86;&#xFF01;</p>
+</blockquote>
+<h1 id="&#x65B9;&#x5F0F;3"><a name="&#x65B9;&#x5F0F;3" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F0F;3"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x65B9;&#x5F0F;3</h1>
+<p>1&#x3001;pom&#x4F9D;&#x8D56;</p>
+<pre class="language-"><code class="lang-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-starter-web<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x53BB;&#x9664;&#x9ED8;&#x8BA4;&#x7684;jackson --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>exclusions</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>exclusion</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.fasterxml.jackson.core<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>jackson-databind<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>exclusion</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>exclusions</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Gson --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.google.code.gson<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>gson<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>2&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+&#x5728;&#x5199;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x524D;&#xFF0C;&#x5148;&#x5BF9;&#x4E4B;&#x524D;&#x7684;Student&#x7C7B;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x53BB;&#x9664;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x4E0A;&#x7684;&#x6CE8;&#x89E3;&#xFF0C;&#x5E76;&#x5C06;Sex&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x4E3A;protected&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;Gson&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x88AB;&#x67D0;&#x7C7B;&#x4FEE;&#x9970;&#x7B26;&#x6240;&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x5FFD;&#x7565;&#x3002;
+SpringBoot&#x4F7F;&#x7528;Gson&#x53EF;&#x4EE5;&#x50CF;jackson&#x4E00;&#x6837;&#xFF0C;&#x56E0;&#x4E3A;&#x63D0;&#x4F9B;&#x4E86;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x7C7B;&#x3002;&#x4F46;&#x662F;&#x60F3;&#x8981;&#x5BF9;&#x65E5;&#x671F;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x4E49;&#x7684;HttpMessagerConverter&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Configuration</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">GsonConfig</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token keyword">public</span> <span class="token class-name">GsonHttpMessageConverter</span> <span class="token function">gsonHttpMessageConverter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">GsonHttpMessageConverter</span> converter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GsonHttpMessageConverter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">GsonBuilder</span> builder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GsonBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x8BBE;&#x7F6E;&#x89E3;&#x6790;&#x65E5;&#x671F;&#x7684;&#x683C;&#x5F0F;</span>
+        builder<span class="token punctuation">.</span><span class="token function">setDateFormat</span><span class="token punctuation">(</span><span class="token string">&quot;yyyy-MM-dd HH:MM:SS&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x8FC7;&#x6EE4;&#x4FEE;&#x9970;&#x7B26;&#x4E3A;protected&#x7684;&#x5C5E;&#x6027;</span>
+        builder<span class="token punctuation">.</span><span class="token function">excludeFieldsWithModifiers</span><span class="token punctuation">(</span><span class="token class-name">Modifier</span><span class="token punctuation">.</span>PROTECTED<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Gson</span> gson <span class="token operator">=</span> builder<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        converter<span class="token punctuation">.</span><span class="token function">setGson</span><span class="token punctuation">(</span>gson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> converter<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p>[1] spring boot 2.x &#x6DFB;&#x52A0;&#x62E6;&#x622A;&#x5668;&#x914D;&#x7F6E;&#x672A;&#x751F;&#x6548;&#x7684;&#x95EE;&#x9898; <a href="https://www.jianshu.com/p/b6c510fb10f5" target="_blank">https://www.jianshu.com/p/b6c510fb10f5</a></p>
+<p>[2] &#x8BB0;&#x4E00;&#x6B21;&#x8E29;&#x5751;:springboot2.0.2&#x914D;&#x7F6E;fastjson&#x4E0D;&#x751F;&#x6548; <a href="https://segmentfault.com/a/1190000015975405" target="_blank">https://segmentfault.com/a/1190000015975405</a></p>
+<p>[3] SpringBoot - Jackson&#x3001;Gson&#x3001;fastJson&#x8FD4;&#x56DE;JSON&#x6570;&#x636E; <a href="https://www.codeleading.com/article/88623202968/" target="_blank">https://www.codeleading.com/article/88623202968/</a></p>
+<p>[4] &#x6D45;&#x6790;Gson&#x4E0E;Spring Boot <a href="https://its401.com/article/weixin_34266504/91478813" target="_blank">https://its401.com/article/weixin_34266504/91478813</a></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="https://github.com/givedrug" target="_blank">givedrug</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2022-04-23 15:30:46 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"将spring默认json转换器替换为gson","level":"1.2.3.1","depth":3,"next":{"title":"Bbb","level":"1.3","depth":1,"ref":"","articles":[{"title":"test","level":"1.3.1","depth":2,"ref":"","articles":[{"title":"test","level":"1.3.1.1","depth":3,"path":"docs/bbb/test/test.md","ref":"docs/bbb/test/test.md","articles":[]},{"title":"test1","level":"1.3.1.2","depth":3,"path":"docs/bbb/test/test1.md","ref":"docs/bbb/test/test1.md","articles":[]}]}]},"previous":{"title":"Spring","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"将spring默认json转换器替换为gson","level":"1.2.3.1","depth":3,"path":"docs/aaa/spring/333.md","ref":"docs/aaa/spring/333.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","github-buttons","editlink","copy-code-button","page-footer-ex","anchor-navigation-ex","expandable-chapters-small","prism","-highlight","-lunr","-search","search-pro","donate","splitter"],"ignores":["_book","node_modules"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"typescript"}},"editlink":{"label":"Edit This Page","multilingual":false,"base":"https://github.com/givedrug/coder-notes/tree/master"},"page-footer-ex":{"copyright":"By [givedrug](https://github.com/givedrug)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"<i>updated</i>"},"splitter":{},"search-pro":{},"donate":{"alipay":"","alipayText":"支付宝捐赠","button":"Donate","title":"","wechat":"","wechatText":"微信捐赠"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"givedrug","repo":"coder-notes","type":"star","size":"small"}]},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Summary","gitbook":"*"},"file":{"path":"docs/aaa/spring/333.md","mtime":"2022-04-23T15:30:46.780Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-23T15:31:50.717Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,7 @@
+div[data-path*="_config.yml"],
+div[data-path*="LICENSE"],
+div[data-path*="assets"],
+div[data-path*="assets"] + div.nav-folder-children
+{
+    display: none;
+}
