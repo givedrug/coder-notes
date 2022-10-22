@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 234.5
   },
   "right": {
     "id": "ab54d305bc175746",
@@ -121,7 +121,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4aa675918213f4b7",
+  "active": "7f2ce1f92c72990f",
   "lastOpenFiles": [
     "#代码片段/java/switch语句.md",
     "docs/aaa/mybatis/222.md",
