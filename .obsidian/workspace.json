@@ -14,12 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "docs/bbb/test/test.md",
-                "mode": "preview",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5d8334258697ac2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/bbb/test/未命名.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/bbb/test/test.md",
+                "file": "docs/bbb/test/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/bbb/test/test.md",
+                "file": "docs/bbb/test/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -106,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/bbb/test/test.md"
+                "file": "docs/bbb/test/未命名.md"
               }
             }
           }
@@ -115,16 +128,15 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5,
-    "collapsed": true
+    "width": 240.5
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4aa675918213f4b7",
+  "active": "b5d8334258697ac2",
   "lastOpenFiles": [
-    "docs/bbb/test/test1.md",
     "docs/bbb/test/test.md",
+    "docs/bbb/test/test1.md",
     "docs/aaa/1.1/1.1.1.md",
     "docs/aaa/mybatis/222.md",
     "#代码片段/java/switch语句.md",
