@@ -11,5 +11,5 @@
   "showLineNumber": true,
   "showFrontmatter": false,
   "newFileLocation": "current",
-  "newLinkFormat": "relative"
+  "newLinkFormat": "absolute"
 }
