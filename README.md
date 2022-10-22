@@ -11,6 +11,8 @@ huhu
 
 good
 
+2
+
 关于mysql同步ck的不同方案对比：
 因为ck的自身OLAP特征，对于update和delete的支持十分有限，当需要进行变更数据操作时，往往只能迂回解决：
 方案一：mysql直接同步到ck表
