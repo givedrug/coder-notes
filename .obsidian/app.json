@@ -10,5 +10,6 @@
   "strictLineBreaks": true,
   "showLineNumber": true,
   "showFrontmatter": false,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "newLinkFormat": "relative"
 }
