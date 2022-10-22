@@ -11,6 +11,6 @@
   "showLineNumber": true,
   "showFrontmatter": false,
   "newFileLocation": "current",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "useMarkdownLinks": true
 }
