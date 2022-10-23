@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "b2ce296ba4e72f3c",
+        "id": "ea757fcc2d1c0b63",
         "type": "tabs",
         "children": [
           {
-            "id": "4aa675918213f4b7",
+            "id": "0eb0a4b5bcdafadb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/bbb/test/test.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5d8334258697ac2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/bbb/test/未命名.md",
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/bbb/test/未命名.md",
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/bbb/test/未命名.md",
+                "file": "SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -119,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/bbb/test/未命名.md"
+                "file": "SUMMARY.md"
               }
             }
           }
@@ -128,22 +115,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 240.5,
+    "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b5d8334258697ac2",
+  "active": "0eb0a4b5bcdafadb",
   "lastOpenFiles": [
-    "docs/bbb/test/test.md",
-    "docs/bbb/test/test1.md",
     "docs/aaa/1.1/1.1.1.md",
-    "docs/aaa/mybatis/222.md",
-    "#代码片段/java/switch语句.md",
+    "SUMMARY.md",
     "README.md",
-    "#代码片段/spring/将spring默认json转换器替换为gson.md",
-    "#代码片段/mybatis/RESTful API与mybatis注解方式完整示例.md",
-    "docs/aaa/spring/333.md",
-    "SUMMARY.md"
+    "docs/bbb/test/测试模板.md",
+    "aaa/aaa.md",
+    "docs/aaa/mybatis/222.md",
+    "模板/aaa.md",
+    "#模板/测试末班.md",
+    "docs/bbb/test/test.md",
+    "docs/bbb/test/test1.md"
   ]
 }
