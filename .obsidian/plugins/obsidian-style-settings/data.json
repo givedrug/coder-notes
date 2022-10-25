@@ -3,5 +3,6 @@
   "blue-topaz-theme@@hide-vault-name": false,
   "blue-topaz-theme@@font-family-change-to-default": false,
   "blue-topaz-theme@@font-family-vault": "'Lucida', 'Segoe UI Emoji'",
-  "blue-topaz-theme@@font-size-vault-name": "1.2em"
+  "blue-topaz-theme@@font-size-vault-name": "1.2em",
+  "blue-topaz-theme@@code-box-style-option": "codebox-default-style"
 }
