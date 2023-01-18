@@ -16,7 +16,7 @@ jobs:
 
       - name: generate _sidebar.md
         run: |
-          sh ./docs/siderbar.sh
+          bash ./docs/siderbar.sh
 
       - name: push _sidebar.md to branch gh-pages
         env:
