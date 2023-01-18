@@ -25,7 +25,7 @@ jobs:
           MYEMAIL: givedrug@outlook.com
           MYNAME: ${{github.repository_owner}}
         run: |
-          cd _docs
+          cd docs
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
