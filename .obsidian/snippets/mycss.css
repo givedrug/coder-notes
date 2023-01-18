@@ -1,4 +1,5 @@
-div[data-path*="_config.yml"],
+div[data-path*="index.html"],
+div[data-path*="sidebar.sh"],
 div[data-path*="LICENSE"],
 div[data-path*="assets"],
 div[data-path*="assets"] + div.nav-folder-children
