@@ -28,7 +28,7 @@ function deal_file(){
 root_dir=`ls -d docs/*/`
 
 :> $sidebar_path
-echo "- [README](README.md)\n" >> $sidebar_path
+echo "- [README](README.md)" >> $sidebar_path
 for dir in $root_dir
 do
     if [ "$dir" = "." ]
