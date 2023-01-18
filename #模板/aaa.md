@@ -1,6 +1,1 @@
-sdfsdfsdf
-
-s
-sdfsdfsdfsdf
-sdfsdfsdfsdfdf
-sdfsdfsdf
+这是一个模版

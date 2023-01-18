@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f77cfa473c3c19ec",
+        "id": "d6169337197f61d5",
         "type": "tabs",
         "children": [
           {
-            "id": "e61c9a9d0f54c99d",
+            "id": "fa673d2fd476027b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -109,17 +109,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "e61c9a9d0f54c99d",
+  "active": "50dbef4447f15bed",
   "lastOpenFiles": [
+    "docs/aaa/1.1/1.1.1.md",
+    "#模板/aaa.md",
+    "#代码片段/mybatis/RESTful API与mybatis注解方式完整示例.md",
+    "#代码片段/spring/将spring默认json转换器替换为gson.md",
     "大师的盛宴：20世纪最佳科幻小说选.md",
     "耻（同名电影原著）.md",
     "艾比斯之梦.md",
     "再袭面包店.md",
     "上帝掷骰子吗？：量子物理史话（升级版）.md",
-    "#代码片段/spring/将spring默认json转换器替换为gson.md",
-    "docs/bbb/test/test1.md",
-    "docs/aaa/1.1/1.1.1.md",
-    "docs/bbb/test/test.md",
-    "docs/bbb/test/测试模板.md"
+    "docs/bbb/test/test1.md"
   ]
 }
