@@ -11,7 +11,7 @@ function deal_file(){
         let counter-=2
         if [ -d $dir_or_file ] ;
         then
-            if [ "$dir_or_file" != "assets" ];then
+            if [ "$element" != "assets" ];then
                 printf '%0.s  ' $(seq 0 $counter) >> $sidebar_path
                 echo "- $element" >> $sidebar_path
                 deal_file $dir_or_file
