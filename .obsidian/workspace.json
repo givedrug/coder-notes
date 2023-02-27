@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
+                "file": "template/aaa.md",
                 "mode": "preview",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
+                "file": "template/aaa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
+                "file": "template/aaa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/!代码片段/spring/将spring默认json转换器替换为gson.md"
+                "file": "template/aaa.md"
               }
             }
           }
@@ -127,13 +127,27 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "50dbef4447f15bed",
+  "active": "fa673d2fd476027b",
   "lastOpenFiles": [
+    "docs/11常用软件/README.md",
+    "docs/10测试与运维/README.md",
+    "docs/9后端/README.md",
+    "docs/8前端/README.md",
+    "docs/7系统设计/README.md",
+    "docs/6数据库/README.md",
+    "docs/5计算机网络/README.md",
+    "docs/4Linux系统/README.md",
+    "docs/3编程语言/3-1Java/README.md",
+    "docs/2设计模式/README.md",
+    "docs/1数据结构与算法/README.md",
+    "docs/0数学基础/README.md",
+    "docs/!源码学习/README.md",
+    "docs/!技术文章/README.md",
+    "docs/README.md",
+    "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
     "docs/!代码片段/mybatis/RESTful API与mybatis注解方式完整示例.md",
     "docs/!代码片段/java/switch语句.md",
     "template/aaa.md",
-    "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
-    "docs/README.md",
     "docs/代码片段/java/asdf/sdfsdf/sdfsdf.md",
     "README.md",
     "#代码片段/java/switch语句.md",
