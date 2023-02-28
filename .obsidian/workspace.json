@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/02设计模式/UML类图六种基本关系.md",
+                "file": "docs/02设计模式/UML类图中的关系.md",
                 "mode": "preview",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/02设计模式/UML类图六种基本关系.md",
+                "file": "docs/02设计模式/UML类图中的关系.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/02设计模式/UML类图六种基本关系.md",
+                "file": "docs/02设计模式/UML类图中的关系.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/02设计模式/UML类图六种基本关系.md"
+                "file": "docs/02设计模式/UML类图中的关系.md"
               }
             }
           }
@@ -132,14 +132,14 @@
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-oM5Jkf",
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-XuwTEa",
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-VJ7kDv",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228110235486.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228110220463.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228110200222.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228110143634.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230228110030449.png",
-    "docs/02设计模式/assets/UML类图六种基本关系/image-20230227172942888.png",
-    "docs/02设计模式/assets/UML类图六种基本关系",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228113838354.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228110235486.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228110220463.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228110200222.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228110143634.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230228110030449.png",
+    "docs/02设计模式/assets/UML类图中的关系/image-20230227172942888.png",
+    "docs/02设计模式/assets/UML类图中的关系",
     "docs/02设计模式/assets",
     "docs/01算法/README.md",
     "docs/!代码片段/spring/将spring默认json转换器替换为gson.md",
@@ -156,7 +156,7 @@
     "docs/04Linux系统/README.md",
     "docs/04Linux系统",
     "docs/03编程语言/3-1Java/README.md",
-    "docs/02设计模式/UML类图六种基本关系.md",
+    "docs/02设计模式/UML类图中的关系.md",
     "docs/00数学基础/README.md",
     "docs/9后端/README.md",
     "docs/8前端/README.md",
