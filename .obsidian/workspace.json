@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "10ce21a5956432ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/02设计模式/设计模式概述.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2000d7996d5c2364",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/02设计模式/设计模式六大原则.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/02设计模式/设计模式概述.md",
+                "file": "docs/02设计模式/UML类图中的关系.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/02设计模式/设计模式概述.md",
+                "file": "docs/02设计模式/UML类图中的关系.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/02设计模式/设计模式概述.md"
+                "file": "docs/02设计模式/UML类图中的关系.md"
               }
             }
           }
@@ -152,12 +127,18 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "10ce21a5956432ed",
+  "active": "6aeddfb92d0e0d0d",
   "lastOpenFiles": [
-    "docs/02设计模式/设计模式六大原则.md",
-    "docs/02设计模式/设计模式概述.md",
-    "docs/01算法/README.md",
+    "docs/05网络/README.md",
     "docs/02设计模式/UML类图中的关系.md",
+    "docs/!源码学习/README.md",
+    "template/aaa.md",
+    "docs/11常用软件/README.md",
+    "docs/!技术文章/README.md",
+    "未命名.canvas",
+    "docs/02设计模式/设计模式概述.md",
+    "docs/02设计模式/设计模式六大原则.md",
+    "docs/01算法/README.md",
     "docs/07系统设计/代码分层设计.md",
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-oM5Jkf",
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-XuwTEa",
@@ -179,7 +160,6 @@
     "docs/07系统设计",
     "docs/06数据库/README.md",
     "docs/06数据库",
-    "docs/05网络/README.md",
     "docs/05网络",
     "docs/04Linux系统/README.md",
     "docs/03编程语言/3-1Java/README.md",
@@ -192,10 +172,6 @@
     "docs/4Linux系统/README.md",
     "docs/3编程语言/3-1Java/README.md",
     "docs/2设计模式/README.md",
-    "docs/1数据结构与算法/README.md",
-    "docs/11常用软件/README.md",
-    "docs/10测试与运维/README.md",
-    "docs/0数学基础/README.md",
-    "docs/!源码学习/README.md"
+    "docs/1数据结构与算法/README.md"
   ]
 }
