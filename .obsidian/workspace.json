@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c748dcb6314e2b8d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,7 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 208.5
   },
   "right": {
     "id": "ab54d305bc175746",
@@ -127,7 +138,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "6aeddfb92d0e0d0d",
+  "active": "c748dcb6314e2b8d",
   "lastOpenFiles": [
     "docs/02设计模式/UML类图中的关系.md",
     "docs/05网络/README.md",
