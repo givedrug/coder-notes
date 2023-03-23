@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/11常用软件/README.md",
+                "file": "docs/02设计模式/设计模式概述.md",
                 "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "c748dcb6314e2b8d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/11常用软件/README.md",
+                "file": "docs/02设计模式/设计模式概述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/11常用软件/README.md",
+                "file": "docs/02设计模式/设计模式概述.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -117,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/11常用软件/README.md"
+                "file": "docs/02设计模式/设计模式概述.md"
               }
             }
           }
@@ -138,17 +127,17 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "c748dcb6314e2b8d",
+  "active": "6aeddfb92d0e0d0d",
   "lastOpenFiles": [
+    "docs/02设计模式/设计模式六大原则.md",
+    "docs/02设计模式/设计模式概述.md",
     "docs/02设计模式/UML类图中的关系.md",
+    "docs/11常用软件/README.md",
     "docs/05网络/README.md",
     "docs/!源码学习/README.md",
     "template/aaa.md",
-    "docs/11常用软件/README.md",
     "docs/!技术文章/README.md",
     "未命名.canvas",
-    "docs/02设计模式/设计模式概述.md",
-    "docs/02设计模式/设计模式六大原则.md",
     "docs/01算法/README.md",
     "docs/07系统设计/代码分层设计.md",
     "docs/02设计模式/assets/UML类图六种基本关系/image-20230228113838354.png.sb-84caf19c-oM5Jkf",
