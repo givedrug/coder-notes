@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "15a38485368025be",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,7 +138,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "fa673d2fd476027b",
+  "active": "15a38485368025be",
   "lastOpenFiles": [
     "docs/11常用软件/README.md",
     "docs/10测试与运维/README.md",
