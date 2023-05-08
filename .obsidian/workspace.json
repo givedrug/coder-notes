@@ -56,6 +56,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "f75d5b5987bfcaaf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -127,7 +135,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "6aeddfb92d0e0d0d",
+  "active": "7f2ce1f92c72990f",
   "lastOpenFiles": [
     "docs/02设计模式/设计模式六大原则.md",
     "docs/02设计模式/设计模式概述.md",
