@@ -56,6 +56,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "f75d5b5987bfcaaf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -127,7 +135,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "fa673d2fd476027b",
+  "active": "7f2ce1f92c72990f",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "docs/09后端/README.md",
