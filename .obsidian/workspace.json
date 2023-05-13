@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6652c5a28394483a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -135,7 +146,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "7f2ce1f92c72990f",
+  "active": "6652c5a28394483a",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "docs/09后端/README.md",
