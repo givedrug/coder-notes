@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "352e3d49345bdd8c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.8"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +135,7 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "352e3d49345bdd8c",
+  "active": "6aeddfb92d0e0d0d",
   "lastOpenFiles": [
     "docs/02设计模式/设计模式六大原则.md",
     "docs/02设计模式/设计模式概述.md",
