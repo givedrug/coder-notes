@@ -15,6 +15,8 @@
       name: 'coder-notes',
       repo: 'https://github.com/givedrug/coder-notes',
       loadSidebar: true,
+      maxLevel: 3,
+      subMaxLevel: 0,
       homepage: 'README.md',
       auto2top: true,
       //全文搜索
@@ -34,8 +36,12 @@
   <script src="//unpkg.com/docsify@4/lib/docsify.min.js"></script>
   <!-- Github右上角链接 -->
   <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
-  <!--全文搜索,直接用官方提供的无法生效-->
-  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+  <!-- Java代码高亮 -->
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <!-- 复制代码 -->
+  <script src="//unpkg.com/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 全文搜索 -->
+  <script src="//unpkg.com/docsify@4/lib/plugins/search.min.js"></script>
 
 </body>
 </html>
