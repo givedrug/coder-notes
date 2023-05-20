@@ -25,7 +25,8 @@ jobs:
           MYEMAIL: givedrug@outlook.com
           MYNAME: ${{github.repository_owner}}
         run: |
-          cd docs
+          cp -r docs docs_copy
+          cd docs_copy
           git config --global user.email "${MYEMAIL}"
           git config --global user.name "${MYNAME}"
           git init
@@ -33,12 +34,5 @@ jobs:
           git add . 
           git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
           git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
-
-      - name: checkout gh-pages
-        uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-
-      - name: add first title
-        run: |
-          bash ./addFirstTitle.sh
+          cd ..
+          rm -rf docs_copy
