@@ -1,5 +1,5 @@
 #!/bin/bash
-doc_path=./
+doc_path=docs_copy/
 
 function deal_file(){
     for element in `ls -1 $1`
@@ -20,7 +20,7 @@ function deal_file(){
 }
 
 # -d 只列出目录
-root_dir=`ls -d ./*/`
+root_dir=`ls -d docs_copy/*/`
 
 for dir in $root_dir
 do

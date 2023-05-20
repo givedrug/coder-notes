@@ -1,5 +1,5 @@
 #!/bin/bash
-doc_path=docs/
+doc_path=docs_copy/
 sidebar_path=$doc_path"_sidebar.md"
 
 function deal_file(){
@@ -27,7 +27,7 @@ function deal_file(){
     done
 }
 
-root_dir=`ls -d docs/*/`
+root_dir=`ls -d docs_copy/*/`
 
 :> $sidebar_path
 # b标签用于加粗
