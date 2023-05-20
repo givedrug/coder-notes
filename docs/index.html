@@ -73,6 +73,8 @@
 <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script src="src/md5.min.js"></script>
 <script>
+    // title_id需要初始化
+    window.title_id = window.location.hash.match(/#(.*?)([?]|$)/) ? window.location.hash.match(/#(.*?)([?]|$)/)[1] : '/';
     const gitalk = new Gitalk({
         clientID: 'cb30f74ae8ec5a51529f',
         clientSecret: '889df0a5b70e0eaa3938e258c8085ac0f1ed70db',
@@ -83,6 +85,12 @@
         // 页面的唯一标识
         id: md5(window.location.href)
     })
+    // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题
+    window.onhashchange = function (event) {
+        if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+            location.reload()
+        }
+    }
 </script>
 </body>
 </html>
