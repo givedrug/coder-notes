@@ -39,6 +39,6 @@ jobs:
         with:
           ref: gh-pages
 
-      - name: generate _sidebar.md
+      - name: add first title
         run: |
           bash ./addFirstTitle.sh
