@@ -13,7 +13,7 @@ function deal_file(){
         else
             if [[ "$element" == *"md" ]]; then
               # md文档开头位置增加一个标题，这样docsify显示内部标题的时候就不会忽略原本的第一个标题了
-              sed -i '1i\#\n' $element
+              sed -i '1i\#\n' $dir_or_file
             fi
         fi
     done
