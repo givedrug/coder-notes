@@ -34,6 +34,11 @@ root_dir=`ls -d docs_copy/*/`
 echo "- [<b>README</b>](README.md)" >> $sidebar_path
 for dir in $root_dir
 do
+    if [[ $dir =~ "src" ]]
+    then
+        continue
+    fi
+
     if [ "$dir" = "." ]
     then
         continue
