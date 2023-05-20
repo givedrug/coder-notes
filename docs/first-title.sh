@@ -1,11 +1,11 @@
 #!/bin/bash
+# 将分隔符由\n\b和空格，改为仅\n\b
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
 doc_path=docs_copy/
 
 function deal_file(){
-  # 将空格替换为%20（html空格）
     for element in `ls -1 $1`
     do
         dir_or_file=$1"/"$element
@@ -17,8 +17,7 @@ function deal_file(){
         else
             if [[ "$element" == *"md" ]]; then
               # md文档开头位置增加一个标题，这样docsify显示内部标题的时候就不会忽略原本的第一个标题了
-              # 将%20替换回空格
-              sed -i '1i\# '$element'\n' $dir_or_file
+              sed -i "1i\# "$element"\n" $dir_or_file
             fi
         fi
     done
@@ -38,4 +37,5 @@ do
     fi
 done
 
+# 将分隔符恢复到默认值
 IFS=$SAVEIFS
