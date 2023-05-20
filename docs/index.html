@@ -83,9 +83,7 @@
         admin: ['givedrug'],
         distractionFreeMode: false,
         // 页面的唯一标识，gitalk
-        id: md5(window.location.hash),
-        // 提交评论快捷键(cmd / ctrl + enter)
-        enableHotKey: true
+        id: md5(window.location.hash)
     })
     // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
     window.onhashchange = function (event) {
