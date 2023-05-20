@@ -2,7 +2,7 @@
 doc_path=docs_copy/
 
 function deal_file(){
-    for element in `ls -1 $1`
+    for element in `ls -1 $1 | sed "s/[ ]/\\\ /g"`
     do
         dir_or_file=$1"/"$element
         if [ -d $dir_or_file ] ;
