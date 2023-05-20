@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="_book.png"/>
+    <link rel="icon" type="image/x-icon" href="src/_book.png"/>
     <link rel="stylesheet" href="//unpkg.com/docsify@4/lib/themes/vue.css">
     <!-- 公式 -->
     <link rel="stylesheet"
@@ -55,7 +55,7 @@
     }
 </script>
 <!-- 公式 -->
-<script src="index.js"></script>
+<script src="src/index.js"></script>
 <!-- Docsify v4 -->
 <script src="//unpkg.com/docsify@4/lib/docsify.min.js"></script>
 <!-- Java代码高亮 -->
@@ -71,10 +71,8 @@
 <!-- 评论 -->
 <script src="//unpkg.com/docsify@4/lib/plugins/gitalk.min.js"></script>
 <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script src="https://wugenqiang.gitee.io/notebook/plugin/md5.min.js"></script>
+<script src="src/md5.min.js"></script>
 <script>
-    // title_id需要初始化
-    window.title_id = window.location.hash.match(/#(.*?)([?]|$)/) ? window.location.hash.match(/#(.*?)([?]|$)/)[1] : '/';
     const gitalk = new Gitalk({
         clientID: 'cb30f74ae8ec5a51529f',
         clientSecret: '889df0a5b70e0eaa3938e258c8085ac0f1ed70db',
@@ -82,15 +80,9 @@
         owner: 'givedrug',
         admin: ['givedrug'],
         distractionFreeMode: false,
-        // 页面的唯一标识，gitalk
-        id: md5(window.location.hash)
+        // 页面的唯一标识
+        id: md5(window.location.href)
     })
-    // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
-    window.onhashchange = function (event) {
-        if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
-            location.reload()
-        }
-    }
 </script>
 </body>
 </html>
