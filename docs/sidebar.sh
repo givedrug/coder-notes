@@ -13,7 +13,7 @@ function deal_file(){
         then
             if [ "$element" != "assets" ];then
                 printf '%0.s  ' $(seq 0 $counter) >> $sidebar_path
-                echo "- $element" >> $sidebar_path
+                echo "- <font color=\"#42b983\"><b>$element</b></font>" >> $sidebar_path
                 deal_file $dir_or_file
             fi
         else
@@ -30,7 +30,8 @@ function deal_file(){
 root_dir=`ls -d docs/*/`
 
 :> $sidebar_path
-echo "- [README](README.md)" >> $sidebar_path
+# b标签用于加粗
+echo "- [<b>README</b>](README.md)" >> $sidebar_path
 for dir in $root_dir
 do
     if [ "$dir" = "." ]
@@ -38,7 +39,9 @@ do
         continue
     else
         C1=`echo $dir | cut -f2 -d '/'`
-        echo "- $C1" | cut -f2 -d '/' >> $sidebar_path
+        C2=`echo "$C1" | cut -f2 -d '/'`
+        # 根目录增加颜色
+        echo "- <font color=\"#42b983\"><b>$C2</b></font>">> $sidebar_path
         # 去掉最后一个字符/
         deal_file `echo $dir | sed 's/.$//'`
     fi

@@ -33,3 +33,12 @@ jobs:
           git add . 
           git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages"
           git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
+
+      - name: checkout gh-pages
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      - name: generate _sidebar.md
+        run: |
+          bash ./addFirstTitle.sh
