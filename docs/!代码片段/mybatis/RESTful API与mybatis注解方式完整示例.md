@@ -1,4 +1,4 @@
-# 目录结构
+## 目录结构
 
 ```
 ├── pom.xml
@@ -23,7 +23,7 @@
 │   │   └── application.properties
 ```
 
-# RESTful API 调用
+## RESTful API 调用
 
 增：
 
@@ -66,22 +66,24 @@ curl --location --request DELETE '127.0.0.1:8080/demo/task?taskId=1'
 curl --location --request GET '127.0.0.1:8080/demo/all'
 ```
 
-# 代码
-## demo_task.sql
+## 代码
+
+### demo_task.sql
 
 ```sql
-CREATE TABLE demo_task (
-    `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+CREATE TABLE demo_task
+(
+    `id`        bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
     `task_type` varchar(45) NOT NULL DEFAULT '' COMMENT '任务类型：split拆分任务，merge聚合任务',
     `task_name` varchar(45) NOT NULL DEFAULT '' COMMENT '任务类型：split拆分任务，merge聚合任务',
-    create_time        timestamp     default CURRENT_TIMESTAMP not null comment '创建时间',
-    update_time        timestamp     default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    create_time timestamp            default CURRENT_TIMESTAMP not null comment '创建时间',
+    update_time timestamp            default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
     PRIMARY KEY (`id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ```
 
-## pom.xml
+### pom.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -153,23 +155,19 @@ CREATE TABLE demo_task (
 </project>
 
 ```
-## application.properties
+
+### application.properties
 
 ```properties
-spring.application.name = mybatisdemo
-
-spring.datasource.driver-class-name = com.mysql.cj.jdbc.Driver
-
-spring.datasource.url = jdbc:mysql://127.0.0.1:3306/gist_demo?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
-
-spring.datasource.username = root
-
-spring.datasource.password = 123456
-
-mybatis.configuration.mapUnderscoreToCamelCase = true
+spring.application.name=mybatisdemo
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/gist_demo?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
+spring.datasource.username=root
+spring.datasource.password=123456
+mybatis.configuration.mapUnderscoreToCamelCase=true
 ```
 
-## TaskController.java
+### TaskController.java
 
 ```java
 package com.example.mybatisdemo.controller;
@@ -191,38 +189,39 @@ public class TaskController {
 
     @PostMapping("/task")
     @ResponseBody
-    public int insertTask(@RequestBody TaskModel taskModel){
+    public int insertTask(@RequestBody TaskModel taskModel) {
         return taskService.insertTask(taskModel);
     }
 
     @GetMapping("/task")
     @ResponseBody
-    public TaskModel getTask(long taskId){
+    public TaskModel getTask(long taskId) {
         return taskService.getTaskById(taskId);
     }
 
     @PutMapping("/task")
     @ResponseBody
-    public int updateTask(@RequestBody TaskModel taskModel){
+    public int updateTask(@RequestBody TaskModel taskModel) {
         return taskService.updateTask(taskModel);
     }
 
     @DeleteMapping("/task")
     @ResponseBody
-    public int deleteTask(long taskId){
+    public int deleteTask(long taskId) {
         return taskService.deleteTask(taskId);
     }
 
     @GetMapping("/all")
     @ResponseBody
-    public List<TaskModel> getAllTasks(){
+    public List<TaskModel> getAllTasks() {
         return taskService.getAllTasks();
     }
 
 }
 
 ```
-## TaskService.java
+
+### TaskService.java
 
 ```java
 package com.example.mybatisdemo.service;
@@ -237,7 +236,7 @@ public interface TaskService {
      * @param taskModel
      * @return
      */
-    int insertTask (TaskModel taskModel);
+    int insertTask(TaskModel taskModel);
 
     /**
      * 通过id获取task
@@ -268,7 +267,8 @@ public interface TaskService {
 }
 
 ```
-## TaskServiceImpl.java
+
+### TaskServiceImpl.java
 
 ```java
 package com.example.mybatisdemo.service.impl;
@@ -315,7 +315,8 @@ public class TaskServiceImpl implements TaskService {
 }
 
 ```
-## TaskModel.java
+
+### TaskModel.java
 
 ```java
 package com.example.mybatisdemo.model;
@@ -354,7 +355,8 @@ public class TaskModel {
 }
 
 ```
-## TaskMapper.java
+
+### TaskMapper.java
 
 ```java
 package com.example.mybatisdemo.mapper;
@@ -370,7 +372,7 @@ import com.example.mybatisdemo.model.TaskModel;
 @Repository
 public interface TaskMapper {
     @Insert("INSERT INTO demo_task (task_type, task_name) VALUES (#{taskType}, #{taskName})")
-    int insertTask (TaskModel taskModel);
+    int insertTask(TaskModel taskModel);
 
     @Select("SELECT * FROM demo_task WHERE id = #{taskId}")
     TaskModel getTaskById(long taskId);
