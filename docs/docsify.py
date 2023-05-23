@@ -4,7 +4,7 @@
 import os
 import re
 
-note_name = 'coder-note'
+note_name = 'coder-notes'
 base_dir = './docs_copy/'
 base_space = 0
 uncheck_dir_list = ['.idea', 'src']
