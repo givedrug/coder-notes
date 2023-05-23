@@ -151,5 +151,3 @@ public class GsonConfig {
 [3] SpringBoot - Jackson、Gson、fastJson返回JSON数据 https://www.codeleading.com/article/88623202968/
 
 [4] 浅析Gson与Spring Boot https://its401.com/article/weixin_34266504/91478813
-
-[uuu uuu](assets/将spring默认json转换器替换为gson/48手详解.docx)

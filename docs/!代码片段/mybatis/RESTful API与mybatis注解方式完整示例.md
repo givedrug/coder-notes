@@ -388,5 +388,3 @@ public interface TaskMapper {
 }
 
 ```
-
-[哈哈  哈](assets/RESTful%20API与mybatis注解方式完整示例/The_AWK_Programming_Language_zh_CN.pdf)
