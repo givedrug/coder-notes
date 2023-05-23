@@ -152,4 +152,4 @@ public class GsonConfig {
 
 [4] 浅析Gson与Spring Boot https://its401.com/article/weixin_34266504/91478813
 
-![uuu uuu](assets/将spring默认json转换器替换为gson/The_AWK_Programming_Language_zh_CN%20(1).pdf)
+[uuu uuu](assets/将spring默认json转换器替换为gson/The_AWK_Programming_Language_zh_CN%20(1).pdf)
