@@ -2,19 +2,22 @@
 # -*- encoding: utf-8 -*-
 
 import os
+import re
 
 base_dir = './docs_copy/'
 base_space = 0
 uncheck_dir_list = ['.idea', 'src']
 
 
-def changeFile(fullname, name):
+def changeFile(base, name):
+    fullname = os.path.join(base, name)
     fr = open(fullname, 'r')
     lines = fr.readlines()
     fr.close()
 
     for idx, line in enumerate(lines):
-        lines[idx] = line
+        lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)',
+                            r'[\1](https://givedrug.github.io/self-wiki/' + base.lstrip(base_dir) + '/\2)', line)
 
     lines.insert(0, '# ' + name.rstrip('.md') + '\n')
 
@@ -36,7 +39,7 @@ def checkAllFile(base, file, base_space):
         if os.path.isfile(fullname) and base != base_dir and name.endswith('.md'):
             file.write(' ' * base_space + '- [' + name.rstrip('.md') + '](' + fullname.lstrip(base_dir).replace(' ',
                                                                                                                 '%20') + ')' + '\n')
-            changeFile(fullname, name)
+            changeFile(base, name)
 
 
 def main():
