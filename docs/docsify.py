@@ -15,11 +15,15 @@ def changeFile(base, name):
     lines = fr.readlines()
     fr.close()
 
-    for idx, line in enumerate(lines):
-        lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)',
-                            r'[\1](https://givedrug.github.io/self-wiki/' + base.lstrip(base_dir) + '/\2)', line)
+    def complete(value):
+        v1 = value.group(1)
+        v2 = value.group(2)
+        return '[' + v1 + '](https://givedrug.github.io/self-wiki/' + base.lstrip(base_dir) + '/' + v2 + ')'
 
-    lines.insert(0, '# ' + name.rstrip('.md') + '\n')
+    for idx, line in enumerate(lines):
+        lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)', complete, line)
+
+    lines.insert(0, '# ' + name.rstrip('.md') + '\n\n')
 
     fw = open(fullname, 'w')
     fw.writelines(lines)
@@ -37,8 +41,8 @@ def checkAllFile(base, file, base_space):
             file.write(' ' * base_space + '- <font color="#42b983"><b>' + name + '</b></font>' + '\n')
             checkAllFile(fullname, file, base_space + 2)
         if os.path.isfile(fullname) and base != base_dir and name.endswith('.md'):
-            file.write(' ' * base_space + '- [' + name.rstrip('.md') + '](' + fullname.lstrip(base_dir).replace(' ',
-                                                                                                                '%20') + ')' + '\n')
+            file.write(' ' * base_space + '- [' + name.rstrip('.md') + '](' +
+                       fullname.lstrip(base_dir).replace(' ', '%20') + ')' + '\n')
             changeFile(base, name)
 
 
