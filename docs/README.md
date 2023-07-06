@@ -7,12 +7,12 @@
 欢迎通过issue提出问题或建议：[issue](https://github.com/givedrug/coder-notes/issues)
 
 **本笔记包含内容如下：**
+
 - 代码片段
 - 源码学习
-- 00 计算机数学
 - 01 算法
 - 02 设计模式
-- 03 编程语言
+- 03 Java
 - 04 Linux
 - 05 计算机网络
 - 06 数据库
