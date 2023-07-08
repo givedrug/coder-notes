@@ -16,12 +16,18 @@ def changeFile(base, name):
     lines = fr.readlines()
     fr.close()
 
+    # 替换附件链接
     def complete(value):
         v1 = value.group(1)
         v2 = value.group(2)
-        return '[' + v1 + '](https://givedrug.github.io/' + note_name + '/' + base.lstrip(base_dir) + '/' + v2 + ')'
+        newUrl = 'https://givedrug.github.io/' + note_name + '/' + base.lstrip(base_dir) + '/' + v2
+        newUrl = newUrl.replace(' ', '%20')
+        return '[' + v1 + '](' + newUrl + ')'
 
     # 替换附件中的链接
+    # 网址：[终于明白六大类UML类图关系了](https://segmentfault.com/a/1190000021317534)
+    # 图片：![](assets/UML类图中的关系/image-20230228113838354.png)
+    # 附件：[文件](assets/类型02-字符串/数独.rar)
     for idx, line in enumerate(lines):
         if 'http' not in lines[idx]:
             lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)', complete, line)
