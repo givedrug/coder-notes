@@ -20,11 +20,11 @@ def changeFile(base, name):
     def complete(value):
         v1 = value.group(1)
         v2 = value.group(2)
-        newUrl = 'https://givedrug.github.io/' + note_name + '/' + base.lstrip(base_dir) + '/' + v2
-        newUrl = newUrl.replace(' ', '%20')
-        return '[' + v1 + '](' + newUrl + ')'
+        new_url = 'https://givedrug.github.io/' + note_name + '/' + base.lstrip(base_dir) + '/' + v2
+        new_url = new_url.replace(' ', '%20')
+        return '[' + v1 + '](' + new_url + ')'
 
-    # 替换附件中的链接
+    # 替换附件中的链接（仅替换附件，网址与图片无需处理）
     # 网址：[终于明白六大类UML类图关系了](https://segmentfault.com/a/1190000021317534)
     # 图片：![](assets/UML类图中的关系/image-20230228113838354.png)
     # 附件：[文件](assets/类型02-字符串/数独.rar)
