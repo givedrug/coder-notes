@@ -23,7 +23,8 @@ def changeFile(base, name):
 
     # 替换附件中的链接
     for idx, line in enumerate(lines):
-        lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)', complete, line)
+        if 'http' not in lines[idx]:
+            lines[idx] = re.sub(r'(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)', complete, line)
 
     # 添加文章标题（这样可以避免docsify中显示文内标题时，缺失第一个标题）
     lines.insert(0, '# ' + name.rstrip('.md') + '\n\n')
