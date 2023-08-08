@@ -12,5 +12,6 @@
   "showFrontmatter": false,
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "readableLineLength": false
 }
