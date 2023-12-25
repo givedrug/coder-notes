@@ -1,3 +1,4 @@
+/*过滤目录*/
 div[data-path*="index.html"],
 div[data-path*="docsify.py"],
 div[data-path*="LICENSE"],
@@ -5,4 +6,10 @@ div[data-path*="src"],
 div[data-path*="assets"],
 div[data-path*="assets"] + div.nav-folder-children {
     display: none;
+}
+
+/*引用格式*/
+.markdown-preview-view blockquote {
+    color: #424242;
+    font-size: .85em;
 }
