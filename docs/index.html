@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="src/custom.css">
     <!-- 评论 -->
     <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 </head>
 <body>
 <div id="app"></div>
@@ -67,18 +68,19 @@
         },
         plugins: [
             function(hook, vm) {
-                hook.beforeEach(function(html) {
-                    var url =
-                        "https://github.com/givedrug/coder-notes/blob/master/" +
-                        vm.route.file;
-                    var editHtml = "[📝 EDIT DOCUMENT](" + url + ")\n";
-
-                    return editHtml + html;
-                });
+                // hook.beforeEach(function(html) {
+                //     var url =
+                //         "https://github.com/givedrug/coder-notes/blob/master/" +
+                //         vm.route.file;
+                //     var editHtml = "[📝 EDIT DOCUMENT](" + url + ")\n";
+                //
+                //     return editHtml + html;
+                // });
 
                 hook.doneEach(function() {
                     var label, domObj, main, divEle, gitalk;
-                    label = vm.route.path.split("/").pop();
+                    // label = vm.route.path.split("/").pop();
+                    label = CryptoJS.MD5(vm.route.path.split("/").pop()).toString();
                     domObj = Docsify.dom;
                     main = domObj.getNode("#main");
 
