@@ -18,10 +18,24 @@
             crossorigin="anonymous"></script>
     <script src="//unpkg.com/marked@4"></script>
     <link rel="stylesheet" href="src/custom.css">
+    <!-- 评论 -->
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 </head>
 <body>
 <div id="app"></div>
 <script>
+    gitalkConfig = {
+        clientID: "cb30f74ae8ec5a51529f",
+        clientSecret: "889df0a5b70e0eaa3938e258c8085ac0f1ed70db",
+        repo: "coder-notes",
+        owner: "givedrug",
+        admin: ["givedrug"],
+        perPage: 20,
+        language: "en",
+        labels: ["💬Gitalk"],
+        pagerDirection: "last",
+        distractionFreeMode: false
+    };
     window.$docsify = {
         name: 'coder-notes',
         repo: 'https://github.com/givedrug/coder-notes',
@@ -50,7 +64,48 @@
             position: 'bottom',
             language: 'chinese',
             isExpected: false
-        }
+        },
+        plugins: [
+            function(hook, vm) {
+                hook.beforeEach(function(html) {
+                    var url =
+                        "https://github.com/givedrug/coder-notes/blob/master/" +
+                        vm.route.file;
+                    var editHtml = "[📝 EDIT DOCUMENT](" + url + ")\n";
+
+                    return editHtml + html;
+                });
+
+                hook.doneEach(function() {
+                    var label, domObj, main, divEle, gitalk;
+                    label = vm.route.path.split("/").pop();
+                    domObj = Docsify.dom;
+                    main = domObj.getNode("#main");
+
+                    /**
+                     * render gittalk
+                     */
+                    if (vm.route.path.includes("zh-cn")) {
+                        gitalkConfig.language = "zh-CN";
+                    }
+                    Array.apply(
+                        null,
+                        document.querySelectorAll("div.gitalk-container")
+                    ).forEach(function(ele) {
+                        ele.remove();
+                    });
+                    divEle = domObj.create("div");
+                    divEle.id = "gitalk-container-" + label;
+                    divEle.className = "gitalk-container";
+                    divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+                    domObj.appendTo(domObj.find(".content"), divEle);
+                    gitalk = new Gitalk(
+                        Object.assign(gitalkConfig, { id: !label ? "home" : label })
+                    );
+                    gitalk.render("gitalk-container-" + label);
+                });
+            }
+        ]
     }
 </script>
 <!-- 公式 -->
@@ -67,5 +122,7 @@
 <script src="//unpkg.com/docsify@4/lib/plugins/zoom-image.min.js"></script>
 <!-- 字数统计 -->
 <script src="//unpkg.com/docsify-count@1.1.0/dist/countable.min.js"></script>
+<!-- 评论 -->
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </body>
 </html>
