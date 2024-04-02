@@ -1,4 +1,3 @@
-## 基本语法
 
 ```
 switch(expression) {
