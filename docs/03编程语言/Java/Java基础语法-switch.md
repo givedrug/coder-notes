@@ -13,7 +13,6 @@ switch(expression) {
 ```
 
 说明：
-
 1. 从 expression 符合 case 后面的值处，开始执行代码，遇到 break 停止。如果没有 break，则会执行后面所有代码（default 也同样会执行）。
 2. 如果 expression 没有符合的 case 值，则执行 default 中的语句。
 3. switch 并不是所有类型都支持，目前支持的类型包括：
