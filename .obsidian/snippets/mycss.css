@@ -9,7 +9,7 @@ div[data-path*="assets"] + div.nav-folder-children {
 }
 
 /*引用格式*/
-.markdown-preview-view blockquote {
-    color: #424242;
-    font-size: .85em;
-}
+/*.markdown-preview-view blockquote {*/
+/*    color: #424242;*/
+/*    font-size: .85em;*/
+/*}*/
