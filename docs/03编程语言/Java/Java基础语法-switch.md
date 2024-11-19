@@ -1,5 +1,5 @@
 
-```
+```java
 switch(expression) {
   case x:
     // code block

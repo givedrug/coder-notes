@@ -313,3 +313,72 @@ public class TaskServiceImpl implements TaskService {
 ```
 
 TaskModel.java
+
+```java
+package com.example.mybatisdemo.model;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class TaskModel {
+    /**
+     * 自增主键
+     */
+    private long id;
+
+    /**
+     * task类型
+     */
+    private String taskType;
+
+    /**
+     * task名称
+     */
+    private String taskName;
+
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
+
+}
+```
+
+TaskMapper.java
+
+```java
+package com.example.mybatisdemo.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
+
+import com.example.mybatisdemo.model.TaskModel;
+
+@Mapper
+@Repository
+public interface TaskMapper {
+    @Insert("INSERT INTO demo_task (task_type, task_name) VALUES (#{taskType}, #{taskName})")
+    int insertTask (TaskModel taskModel);
+
+    @Select("SELECT * FROM demo_task WHERE id = #{taskId}")
+    TaskModel getTaskById(long taskId);
+
+    @Update("UPDATE demo_task SET task_type=#{taskType}, task_name=#{taskName} WHERE id = #{id}")
+    int updateTask(TaskModel taskModel);
+
+    @Delete("DELETE FROM demo_task WHERE id = #{taskId}")
+    int deleteTask(long taskId);
+
+    @Select("SELECT * FROM demo_task")
+    List<TaskModel> getAllTasks();
+}
+```
