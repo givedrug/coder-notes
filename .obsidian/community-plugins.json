@@ -1,7 +1,7 @@
 [
   "obsidian-custom-attachment-location",
   "cmenu-plugin",
-  "obsidian-git",
   "templater-obsidian",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-git"
 ]
