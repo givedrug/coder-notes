@@ -5,6 +5,6 @@
 
 3、使用TreadLocal
 
-4、使用Java8中的DateTimeFormatter（线程安全的）
+**4、使用Java8中的DateTimeFormatter（线程安全的）**
 
 5、使用Hutool的DateUtil工具类
