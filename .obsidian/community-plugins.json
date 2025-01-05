@@ -3,5 +3,6 @@
   "cmenu-plugin",
   "templater-obsidian",
   "table-editor-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-image-toolkit"
 ]
