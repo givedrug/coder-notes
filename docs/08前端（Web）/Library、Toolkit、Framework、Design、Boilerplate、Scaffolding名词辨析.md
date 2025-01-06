@@ -56,4 +56,4 @@ Boilerplate是模板、样板的意思。一般程序员很少了解这个概念
 
 不管你用了jQuery也好，用了Vue也好，用了Bootstrap也好，这些东西的代码都会成为你最终编译成果的一部分，而Scaffolding不会。所以大楼建成以后，外面的脚手架是要被拆掉的，不会和大楼一起交付给业主！
 
-（转载自：https://www.zhihu.com/question/304757674）
+（转载自：[前端三大框架以及jquery与bootstrap这种框架有什么（概念上、范畴上的）区别？](https://www.zhihu.com/question/304757674)）
