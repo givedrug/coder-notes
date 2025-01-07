@@ -1,7 +1,7 @@
 
 java7及以前：
 
-![](assets/JVM内存结构/jvm内存结构1.webp)
+![](assets/JVM内存结构/jvm内存结构1.png)
 
 程序计数器：线程私有，指示当前线程执行字节码的位置。
 
@@ -17,7 +17,7 @@ java7及以前：
 
 堆和方法区在逻辑上是分开的，但在物理上，它们是连续的一块内存。也就是说，方法区和Eden、老年代是连续的。
 
-![](assets/JVM内存结构/jvm内存结构2.webp)
+![](assets/JVM内存结构/jvm内存结构2.png)
 
 Java7及以前版本的Hotspot中方法区位于永久代中。同时，永久代和堆是相互隔离的，但它们使用的物理内存是连续的。
 
@@ -31,7 +31,7 @@ Java8：
 
 在Java8中，元空间(Metaspace)登上舞台，方法区存在于元空间(Metaspace)。同时，元空间不再与堆连续，而且是存在于本地内存（Native memory）。
 
-![](assets/JVM内存结构/jvm内存结构3.webp)
+![](assets/JVM内存结构/jvm内存结构3.png)
 
 本地内存（Native memory），也称为C-Heap，是供JVM自身进程使用的。当Java Heap空间不足时会触发GC，但Native memory空间不够却不会触发GC。
 
@@ -40,3 +40,5 @@ Java8：
 -Xms：初始堆大小
 
 -Xmx：最大堆大小
+
+参考：[面试官，Java8中JVM内存结构变了，永久代到元空间](https://cloud.tencent.com/developer/article/1546965)
