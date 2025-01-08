@@ -27,7 +27,7 @@ Random：随机选择淘汰
 
 LFU（Least Frequently Used）：删除最不经常使用
 
-![](assets/删除策略与淘汰机制/LFU.png)
+![](assets/Redis删除策略与淘汰机制/LFU.png)
 
 ```
 LFU算法：
@@ -41,7 +41,7 @@ LFU算法：
 
 LRU（Least Recently Used）：删除最近最少使用（可以理解为是LRU-1）
 
-![](assets/删除策略与淘汰机制/LRU.png)
+![](assets/Redis删除策略与淘汰机制/LRU.png)
 
 ```
 LRU算法：
@@ -53,7 +53,7 @@ LRU算法：
 
 LRU-K（Least Recently Used-K）：是 LRU 算法的扩展，考虑了缓存项最近的 K 次访问时间。
 
-![](assets/删除策略与淘汰机制/LKU.png)
+![](assets/Redis删除策略与淘汰机制/LKU.png)
 
 ```
 LRU-K算法：

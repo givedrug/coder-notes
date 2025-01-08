@@ -1,17 +1,17 @@
 
-![](assets/常用Redis数据类型/redis基本类型.jpeg)
+![](assets/Redis数据类型/redis基本类型.jpeg)
 
 首先对redis来说，所有的key（键）都是字符串。我们在谈基础数据结构时，讨论的是存储值的数据类型，常见的有五种：String（字符串），Hash（哈希），List（列表），Set（集合）、Zset（有序集合）。 
 
 随着 Redis 版本的更新，后面又支持了四种数据类型： BitMap（2.2 版新增）、HyperLogLog（2.8 版新增）、GEO（3.2 版新增）、Stream（5.0 版新增）。
 
-![](assets/常用Redis数据类型/redis数据类型与存储方式对应关系.png)
+![](assets/Redis数据类型/redis数据类型与存储方式对应关系.png)
 
 Redis 内部使用一个 redisObject 对象来表示所有的 key 和 value 。redisObject 中 type 表示一个 value 对象具体是何种数据类型，encoding 是不同数据类型在 Redis 内部的存储方式。
 
 比如：type = string 表示 value 存储的是一个普通字符串，那么 encoding 可以是 raw 或者 int。
 
-![](assets/常用Redis数据类型/Redis基本类型对比.png)
+![](assets/Redis数据类型/Redis基本类型对比.png)
 
 （1）String 是 Redis 最基本的类型，可以理解成与 Memcached 一模一样的类型，一个 Key 对应一个 Value。Value 不仅是 String，也可以是数字。
 
