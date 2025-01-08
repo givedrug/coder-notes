@@ -7,27 +7,25 @@ MyISAM：插入数据快，空间和内存使用比较低。如果表主要是�
 
 MEMORY：所有的数据都在内存中，数据的处理速度快，但是安全性不高。如果需要很快的读写速度，对数据的安全性要求较低，可以选择 MEMOEY。它对表的大小有要求，不能建立太大的表。所以，这类数据库只使用在相对较小的数据库表。
 
-|                                                   | MyISAM    | Memory  | InnoDB   |
-| ------------------------------------------------- | --------- | ------- | -------- |
-| B-tree indexes B树索引                               | Yes       | Yes     | Yes      |
-| Backup/point-in-time recovery 备份/时间点恢复            | Yes       | Yes     | Yes      |
-| Cluster database support 集群数据库支持                  | No        | No      | No       |
-| Clustered indexes 聚簇索引                            | No        | No      | Yes      |
-| Compressed data 压缩数据                              | Yes       | No      | Yes      |
-| Data caches 数据缓存                                  | No        | N/A     | Yes      |
-| Encrypted data 加密数据                               | Yes       | Yes     | Yes      |
-| **Foreign key support 外键支持**                      | **No**    | **No**  | **Yes**  |
-| Full-text search indexes 全文搜索索引                   | Yes       | No      | Yes      |
-| Geospatial data type support 地理空间数据类型支持           | Yes       | No      | Yes      |
-| Geospatial indexing support 地理空间索引支持              | Yes       | No      | Yes      |
-| Hash indexes 哈希索引                                 | No        | Yes     | No       |
-| Index caches 索引缓存                                 | Yes       | N/A     | Yes      |
-| Locking granularity 锁粒度                           | Table     | Table   | Row      |
-| **MVCC MVCC**                                     | **No**    | **No**  | **Yes**  |
-| Replication support 复制支持                          | Yes       | Limited | Yes      |
-| **Storage limits 存储限制**                           | **256TB** | **RAM** | **64TB** |
-| T-tree indexes T树索引                               | No        | No      | No       |
-| **Transactions 事务**                               | **No**    | **No**  | **Yes**  |
-| Update statistics for data dictionary 更新数据字典的统计信息 | Yes       | Yes     | Yes      |
+|                                                   | MyISAM    | Memory    | InnoDB   |
+| ------------------------------------------------- | --------- | --------- | -------- |
+| **B-tree indexes B树索引**                           | **Yes**   | **Yes**   | **Yes**  |
+| Cluster database support 集群数据库支持                  | No        | No        | No       |
+| **Clustered indexes 聚簇索引**                        | **No**    | **No**    | **Yes**  |
+| Compressed data 压缩数据                              | Yes       | No        | Yes      |
+| Data caches 数据缓存                                  | No        | N/A       | Yes      |
+| Encrypted data 加密数据                               | Yes       | Yes       | Yes      |
+| **Foreign key support 外键支持**                      | **No**    | **No**    | **Yes**  |
+| Full-text search indexes 全文搜索索引                   | Yes       | No        | Yes      |
+| Geospatial indexing support 地理空间索引支持              | Yes       | No        | Yes      |
+| Hash indexes 哈希索引                                 | No        | Yes       | No       |
+| Index caches 索引缓存                                 | Yes       | N/A       | Yes      |
+| **Locking granularity 锁粒度**                       | **Table** | **Table** | **Row**  |
+| **MVCC MVCC**                                     | **No**    | **No**    | **Yes**  |
+| Replication support 复制支持                          | Yes       | Limited   | Yes      |
+| **Storage limits 存储限制**                           | **256TB** | **RAM**   | **64TB** |
+| T-tree indexes T树索引                               | No        | No        | No       |
+| **Transactions 事务**                               | **No**    | **No**    | **Yes**  |
+| Update statistics for data dictionary 更新数据字典的统计信息 | Yes       | Yes       | Yes      |
 
 参考：https://dev.mysql.com/doc/refman/8.4/en/storage-engines.html
