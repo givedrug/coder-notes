@@ -25,8 +25,8 @@ Next-Key Lock临键锁（记录锁+间隙锁）：锁定一个范围，包括记
 
 ```
 例子：
-对于**非唯一索引**b，有值1，1，3，6，8
-对于where b=3，先加Next-Key锁(1,3]，再加Gap锁(3,6)综合来看就是锁了(1,6)
+对于非唯一索引b，有值1，1，3，6，8
+对于 where b = 3，先加 Next-Key 锁(1,3]，再加 Gap 锁(3,6)综合来看就是锁了(1,6)
 ```
 
 参考：[MySQL 探秘（七）：InnoDB 行锁算法](https://toutiao.io/posts/q34ohu/preview)
