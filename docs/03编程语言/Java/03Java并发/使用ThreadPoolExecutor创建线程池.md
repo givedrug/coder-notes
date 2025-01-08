@@ -1,7 +1,7 @@
 
 ThreadPoolExecutor的参数：
 
-```Java
+```java
     public ThreadPoolExecutor(int corePoolSize,
                               int maximumPoolSize,
                               long keepAliveTime,
@@ -71,7 +71,7 @@ DiscardPolicy：直接丢弃，不作任何处理。
 
 线程池类：
 
-```Java
+```java
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -112,7 +112,7 @@ public class ThreadPoolExecutorDemo {
 
 线程工厂类：
 
-```Java
+```java
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -137,7 +137,7 @@ public class UserThreadFactory implements ThreadFactory {
 
 任务类：
 
-```Java
+```java
 import java.util.Date;
 
 /**

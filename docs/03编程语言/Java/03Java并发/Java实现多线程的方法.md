@@ -1,7 +1,7 @@
 
 实现Runnable接口：
 
-```Java
+```java
 public class RunnableStyle implements Runnable{
 
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class RunnableStyle implements Runnable{
 
 继承Thread类：
 
-```Java
+```java
 public class ThreadStyle extends Thread{
 
     @Override
@@ -47,7 +47,7 @@ Thread中的run方法实际执行的是Thread中一个Runnable类型的局部变
 
 2.（Thread方式）如果重写了Thread的run方法，那就直接执行重写后的方法
 
-```Java
+```java
 @Override
 public void run() {
     if (target != null) {

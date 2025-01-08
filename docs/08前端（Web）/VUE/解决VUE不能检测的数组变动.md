@@ -8,7 +8,7 @@
 
 举个例子：
 
-```JavaScript
+```javascript
 var vm = newVue({
   data: {
     items: ['a', 'b', 'c']
@@ -20,7 +20,7 @@ vm.items.length = 2 // 不是响应性的
 
 为了解决第一类问题，以下两种方式都可以实现和 `vm.items[indexOfItem] = newValue` 相同的效果，同时也将在响应式系统内触发状态更新：
 
-```JavaScript
+```javascript
 // Vue.set
 Vue.set(vm.items, indexOfItem, newValue)
 // Array.prototype.splice
@@ -29,12 +29,12 @@ vm.items.splice(indexOfItem, 1, newValue)
 
 你也可以使用 `vm.$set` 实例方法，该方法是全局方法 `Vue.set` 的一个别名：
 
-```JavaScript
+```javascript
 vm.$set(vm.items, indexOfItem, newValue)
 ```
 
 为了解决第二类问题，你可以使用 `splice`：
 
-```JavaScript
+```javascript
 vm.items.splice(newLength)
 ```

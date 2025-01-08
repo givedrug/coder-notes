@@ -1,5 +1,5 @@
 
-```JavaScript
+```javascript
 // Vue实例中data属性是如下方式展示的：
 let app = newVue({
 

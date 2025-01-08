@@ -3,7 +3,7 @@ Base64 就是一种编码方法，可以将任意值转成 0～9、A～Z、a-z�
 
 要将非 ASCII 码字符转为 Base64 编码，必须中间插入一个转码（转为 URL 编码）环节，再使用这两个方法，对应的 JavaScript 代码为：
 
-```JavaScript
+```javascript
 function b64Encode(str) {
   return btoa(encodeURIComponent(str));
 }

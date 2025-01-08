@@ -33,7 +33,7 @@ selenium提供了八种单一元素定位方法：
 
 示例代码：
 
-```Java
+```java
 package demo;
  
 import org.openqa.selenium.By;

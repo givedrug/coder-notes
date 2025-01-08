@@ -1,7 +1,7 @@
 
 **show命令**
 
-```SQL
+```sql
 show status ——显示状态信息（扩展show status like ‘XXX’）
 show variables ——显示系统变量（扩展show variables like ‘XXX’）
 show innodb status ——显示InnoDB存储引擎的状态
