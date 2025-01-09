@@ -13,3 +13,19 @@ div[data-path*="assets"] + div.nav-folder-children {
 /*    color: #424242;*/
 /*    font-size: .85em;*/
 /*}*/
+
+.markdown-reading-view ol,
+.markdown-reading-view ul {
+    margin-top: -5px;
+}
+
+.markdown-reading-view ol li,
+.markdown-reading-view ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*!* 移除第一个列表项的上边距 *!*/
+/*.markdown-reading-view ol li:first-child,*/
+/*.markdown-reading-view ul li:first-child {*/
+/*    margin-top: 0;*/
+/*}*/
