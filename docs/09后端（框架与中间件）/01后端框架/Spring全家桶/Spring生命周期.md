@@ -47,16 +47,9 @@ earlySingletonObjects 三级缓存，一般是是半成品的 bean
 
 6、放入 bean 池（单例池或 spring 容器，也即一级缓存）
 
-Spring自动完成
+- Spring自动完成
+- 手动放入单例池：ApplicationContext 上下文中调用 `getBeanFactory().registerSingleton`(beanName，对象)
 
-手动放入单例池：
+7、销毁对象
 
-ApplicationContext上下文中调用getBeanFactory().registerSingleton(beanName,对象)
-
-7.销毁
-
-@PreDestory
-
-DisposableBean接口
-
-destroy-method
+- 执行顺序：@PreDestory -> DisposableBean 接口 -> destroy-method
