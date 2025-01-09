@@ -30,7 +30,9 @@ _斜体_
 
 # 代码块
 
-`短代码`
+行内短代码：`短代码`
+
+行间代码块：
 
 ```java
 import java.math.BigInteger;
@@ -55,7 +57,7 @@ public class JavaBigInteger {
 
 # 链接、图片、附件
 
-[google](www.google.com)
+超链接：[google](www.google.com)
 
 ![](assets/example/Markdown.png)
 
@@ -94,7 +96,53 @@ public class JavaBigInteger {
 
 ---
 
-# 参考链接
+# 参考
 
-[1]  www.google.com 参考此处
+（参考：[abc](https://abc.com)）
 
+（转载自：[abc](https://abc.com)）
+
+**参考：**
+1. [abc](https://abc.com)
+2. 《123》
+
+# 表格
+
+|1|2|3|
+|---|---|---|
+|2|3|4|
+|2|3|4|
+|2|3|4|
+
+# 公式
+
+居中公式：
+
+$$  
+E=mc^2  
+$$
+
+行内公式 这是一个行内公式：$E=mc^2$ 这是一个行内公式。
+
+# 待办事项
+
+- [ ] 待办1
+- [x] 待办2
+
+# 脚注
+
+需要添加脚注<sup>1</sup>
+
+[1] 这里是脚注
+
+# 流程图
+
+```mermaid
+stateDiagram-v2
+    [*] --> 我是咖啡豆
+    我是咖啡豆 --> [*]
+    我是咖啡豆 --> 打成咖啡粉
+    打成咖啡粉 --> 我是咖啡豆
+    打成咖啡粉 --> 泡成咖啡
+    泡成咖啡 --> [*]
+```
