@@ -7,10 +7,10 @@
 
 ```java
 String str="Hello World!";
-        char[]strCharArray=str.toCharArray();
-        strCharArray[5]=',';
-        String newStr=new String(strCharArray);
-        System.out.println(newStr);
+char[]strCharArray=str.toCharArray();
+strCharArray[5]=',';
+String newStr=new String(strCharArray);
+System.out.println(newStr);
 // Hello,World!
 ```
 
